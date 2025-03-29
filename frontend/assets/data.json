@@ -1,0 +1,17 @@
+{
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Complete React Native Project",
+        "description": "Finish the to-do list app UI.",
+        "deadline": "2024-07-27 18:00"
+      },
+      {
+        "id": 2,
+        "title": "Buy Groceries",
+        "description": "Get milk, eggs, and bread.",
+        "deadline": "2024-07-28 10:00"
+      }
+    ]
+  }
+  
