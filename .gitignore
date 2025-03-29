@@ -1,0 +1,23 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# React Native
+.expo/
+.expo-shared/
+android/
+ios/
+build/
+.idea/
+*.log
+*.lock
+
+# Firebase & Logs
+firebase-debug.log
+debug.log
+
+# VS Code & Editor Files
+.vscode/
+.DS_Store
