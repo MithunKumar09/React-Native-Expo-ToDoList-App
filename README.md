@@ -105,12 +105,12 @@ This is the backend for a Task Management application built using **Node.js**, *
   
 ## 📌 API Endpoints
 ### --  Method  |	Endpoint |	Description
---  POST	/auth/signup	Register a new user
---  POST	/auth/login	Login and get token
---  GET	/tasks/	Get all tasks
---  POST	/tasks/	Add a new task
---  PATCH	/tasks/:id	Update task status
---  DELETE	/tasks/:id	Delete a task
+####  POST	/auth/signup	Register a new user
+####  POST	/auth/login	Login and get token
+####  GET	/tasks/	Get all tasks
+####  POST	/tasks/	Add a new task
+####  PATCH	/tasks/:id	Update task status
+####  DELETE	/tasks/:id	Delete a task
 
 🤝 Contributors
 **Mithun Kumar** – Developer
