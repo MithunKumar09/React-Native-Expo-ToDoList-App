@@ -23,6 +23,31 @@ A powerful and user-friendly To-Do List Application built using React Native (Ex
 - **MongoDB Atlas** – As the database for storing tasks and user data
 - **JWT (JSON Web Tokens)** – For authentication
 
+### Task Management Backend
+This is the backend for a Task Management application built using **Node.js**, **Express.js**, and **MongoDB**. The backend provides user authentication, task creation, retrieval, updating, and deletion functionalities.
+
+### Features
+- **User Authentication** (Signup, Login, JWT-based Authorization)
+- **Task Management** (Create, Read, Update, Delete)
+- **Task Status Updates** (Automatically mark expired tasks as `Incompleted`)
+- **Secure API with JWT Authentication**
+- **RESTful API Structure**
+- **Scheduled Task Expiration Check (using `node-cron`)**
+- **CORS Support for Mobile and Web Clients**
+
+---
+
+### 🛠️ Technologies Used
+- **Backend Framework**: Node.js with Express.js
+- **Database**: MongoDB (using Mongoose)
+- **Authentication**: JSON Web Tokens (JWT)
+- **Scheduler**: `node-cron` for periodic updates
+- **Date Handling**: Moment.js
+- **Environment Variables**: `dotenv`
+- **Middleware**: CORS, Express JSON parser
+
+---
+
 ## 📁 Project Structure
 - **/ToDoListApp**
 - │── /frontend
@@ -47,6 +72,11 @@ A powerful and user-friendly To-Do List Application built using React Native (Ex
 - │   ├── server.js
 - │── .gitignore
 - │── README.md
+
+## ⏳ Automatic Task Expiration
+- Uses node-cron to check for expired tasks every minute.
+- If a task's date and time have passed, it is automatically marked as Incompleted.
+- Ensures no outdated tasks remain in the "Scheduled" state.
   
 ## 🔧 Setup & Installation
 ### Backend
@@ -74,7 +104,7 @@ A powerful and user-friendly To-Do List Application built using React Native (Ex
 -- expo start
   
 ## 📌 API Endpoints
---  Method	Endpoint	Description
+### --  Method  |	Endpoint |	Description
 --  POST	/auth/signup	Register a new user
 --  POST	/auth/login	Login and get token
 --  GET	/tasks/	Get all tasks
